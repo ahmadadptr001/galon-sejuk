@@ -1,0 +1,129 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%
+}
+
+img {
+    object-fit: contain;
+}
+
+/* index.html */
+header {
+    position: sticky;
+}
+
+.top-header {
+    background: #F3F5FC;
+    font-size: 78%;
+}
+
+@media (max-width: 576px) {
+    .top-header {
+        font-size: 48%;
+    }
+
+    .navbar-brand img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+    
+@media (min-width: 768px) {
+    #hero {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 992px) {
+    #hero {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.galon-img-big-container img {
+    width: 95%;
+}
+
+.galon-img-mini-container img {
+    border-radius: .5rem;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #5DA7BD;
+    padding: .5rem;
+}
+
+.share-produk {
+    font-size: 80%;
+}
+
+.share-produk img {
+    width: 17px;
+    height: 17px;
+}
+
+.informasi-produk {
+    font-size: 90%;
+}
+
+.informasi-produk img {
+    width: 13px;
+    height: 13px;
+}
+
+.pesan-produk button {
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #F6F9FC;
+}
+
+footer .footer-up {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+    footer .footer-up {
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    footer .footer-up {
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    footer .footer-up {
+        text-align: center;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
